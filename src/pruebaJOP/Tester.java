@@ -3,12 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyectopoo;
+package pruebaJOP;
+
 
 /**
  *
  * @author pimie
  */
-public class Problema1 {
+public class Tester {
+    
+    public static void main (String [] args){
+        
+        
+        
+        Reporte repor = new Reporte();
+        repor.imprimirReporte();
+    }
+
     
 }
