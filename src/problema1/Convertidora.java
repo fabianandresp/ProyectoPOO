@@ -1,12 +1,14 @@
-package problema1;
+
 
 import java.util.Scanner;
+import problema1.Moneda;
 
 public class Convertidora {
 
  Moneda monedaColon;
-    Moneda monedaDolar;
-    Moneda monedaEuro;
+ Moneda monedaDolar;
+ Moneda monedaEuro;
+ 
             
     
     public Convertidora(){
