@@ -10,12 +10,14 @@ package problema4;
  * @author pimie
  */
 public class Tester {
-    public static void main (String[] args){
+
+    public static void main(String[] args) {
         Aplicacion prueba = new Aplicacion();
-        
+
         prueba.datosArreglo();
         prueba.elementoArreglo();
-        
+        prueba.busquedaBinaria();
+
     }
-    
+
 }

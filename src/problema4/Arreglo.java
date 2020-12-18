@@ -14,9 +14,9 @@ public class Arreglo {
     int elementos;
     int espacio;
     String nombreDelArreglo;
-    
-    public Arreglo (){
-        
+
+    public Arreglo() {
+
     }
 
     public Arreglo(int elementos, int espacio, String nombreDelArreglo) {
@@ -48,6 +48,5 @@ public class Arreglo {
     public void setNombreDelArreglo(String nombreDelArreglo) {
         this.nombreDelArreglo = nombreDelArreglo;
     }
-    
 
 }
