@@ -32,7 +32,7 @@ public class Aplicacion {
         arreglo = new int[nuevo.getEspacio()];
 
         for (int i = 0; i < nuevo.getEspacio(); i++) {
-            System.out.println("DIGITE LOS NUMEROS DEL ARREGLO, RECORDAR QUE DEBEN SER DE MENOR A MAYOR: ");
+            System.out.println("DIGITE LOS NUMEROS DEL ARREGLO:");
             arreglo[i] = s.nextInt();
 
         }
