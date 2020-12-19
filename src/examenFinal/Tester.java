@@ -12,6 +12,15 @@ package examenFinal;
 public class Tester {
     public static void main (String [ ] args){
         
+        EquipoSonido a = new EquipoSonido();
+        Parlantes prue = new Parlantes();
+        
+        a.almacenarMusica();
+        a.mostrarLista();
+        a.reproducirLista();
+        
+        prue.volumenParlante();
+        
         
         
         

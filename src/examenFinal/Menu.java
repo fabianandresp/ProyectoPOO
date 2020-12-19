@@ -9,6 +9,6 @@ package examenFinal;
  *
  * @author pimie
  */
-public class Radio {
+public class Menu {
     
 }
