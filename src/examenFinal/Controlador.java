@@ -11,17 +11,18 @@ import java.util.Scanner;
  *
  * @author pimie
  */
-public class Menu {
+public class Controlador {
+
     Scanner input = new Scanner(System.in);
-    
+
     EquipoSonido men = new EquipoSonido();
     Parlantes sonido = new Parlantes();
 
     int eleccion;
 
     public void menu() {
-        System.out.println("BIENVENIDO");
         
+        System.out.println("BIENVENIDO");
 
         System.out.println("1.- REPRODUCIR RADIO");
         System.out.println("2.- VER LISTA DE CANCIONES EN LA LISTA");
@@ -29,11 +30,18 @@ public class Menu {
         System.out.println("4.- REPRODUCIR LISTA");
         System.out.println("5.- ELIMINAR CANCION DE LA LISTA ");
         System.out.println("6.- MODIFICAR VOLUMEN DE PARLANTES ");
-        System.out.println("7.- APAGAR");
-        
+        System.out.println("7. PROGRAMAR ENCENDIDO");
+        System.out.println("8.- APAGAR");
+
         System.out.println("QUE DESEA HACER?");
         eleccion = input.nextInt();
         entradaMenu();
+    }
+    public void iniciar(){
+          while (true) {
+            menu();
+
+        }
     }
 
     public void entradaMenu() {
@@ -61,8 +69,10 @@ public class Menu {
             case 6:
                 sonido.volumenParlante();
                 break;
-
-            case 7:
+            case 7: 
+                men.programaEncendido();
+                break;
+            case 8:
 
                 System.out.println("NOS VEMOS LUEGO, ADIOS!!");
                 break;

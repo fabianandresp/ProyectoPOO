@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class EquipoSonido {
 
     Scanner input = new Scanner(System.in);
+    Reloj universal;
     String musica;
     String autor;
     String[] listaAudios = new String[1000];
@@ -28,10 +29,10 @@ public class EquipoSonido {
         System.out.println("Cancion: ");
         musica = input.next();
         System.out.println("Autor");
-        autor =input.next();
+        autor = input.next();
 
         if (cont < 100) {
-            listaAudios[cont] = musica + "_" +autor;
+            listaAudios[cont] = musica + "_" + autor;
             cont++;
 
         }
@@ -51,8 +52,7 @@ public class EquipoSonido {
         for (int i = 0; i < cont; i++) {
             if (listaAudios[i] != null) {
                 System.out.println(listaAudios[i]);
-            }
-            else {
+            } else {
                 System.out.println("LA LISTA ESTA VACIA!!! ");
             }
 
@@ -70,6 +70,15 @@ public class EquipoSonido {
         return resultado;
 
     }
+
+    public void programaEncendido() {
+        System.out.println("VAMOS A PROGRAMAR ENCENDIDO ... ");
+        System.out.println("¿HORA");
+        int x = input.nextInt();
+        System.out.println("¿MINUTOS?");
+        int y = input.nextInt();
+       
+}
 
     public void reproducirRadio() {
         System.out.println("Se esta reproduciendo una cancion de MALUMA");

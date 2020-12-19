@@ -13,13 +13,8 @@ public class Tester {
 
     public static void main(String[] args) {
 
-        Menu inicio = new Menu();
+        Controlador inicio = new Controlador();
 
-        
-           while (true){
-           inicio.menu();
-            
-        
-           }
+        inicio.iniciar();
     }
 }
