@@ -14,11 +14,10 @@ import java.util.Arrays;
 public class Tester {
     public static void main (String[] args){
         Merge mer = new Merge();
-        int arreglo1[] = {1, 4,3,7,2};
-        
-        mer.mezclaDirecta(arreglo1);
-        arreglo1 = mer.mezclaDirecta(arreglo1);
-        System.out.println(Arrays.toString(arreglo1));
+        mer.mezclar();
+        mer.imprimir();
+        mer.ordenar();
+        mer.imprimirArrayFinal();
         
         
         
