@@ -15,6 +15,7 @@ public class EquipoSonido {
 
     Scanner input = new Scanner(System.in);
     String musica;
+    String autor;
     String[] listaAudios = new String[1000];
     int cont = 0;
 
@@ -23,19 +24,21 @@ public class EquipoSonido {
     }
 
     public void almacenarMusica() {
-        System.out.println("VAMOS AGREGAR MUSICA A LA LISTA ");
+        System.out.println("VAMOS AGREGAR MUSICA A LA LISTA :");
+        System.out.println("Cancion: ");
         musica = input.next();
+        System.out.println("Autor");
+        autor =input.next();
 
         if (cont < 100) {
-            listaAudios[cont] = musica;
+            listaAudios[cont] = musica + "_" +autor;
             cont++;
 
         }
     }
 
     public void reproducirLista() {
-        System.out.println("QUE CANCION DESEA REPRODUCIR? ");
-        System.out.println("Las opciones son las siguientes: ");
+        System.out.println("SE REPRODUCIRA LA LISTA EN ESTE ORDEN:  ");
         for (int i = 0; i < listaAudios.length; i++) {
             if (listaAudios[i] != null) {
                 System.out.println("1.- " + listaAudios[i]);
@@ -43,14 +46,14 @@ public class EquipoSonido {
         }
 
     }
-    public void escogerCancion(){
-        
-    }
 
     public void mostrarLista() {
         for (int i = 0; i < cont; i++) {
             if (listaAudios[i] != null) {
                 System.out.println(listaAudios[i]);
+            }
+            else {
+                System.out.println("LA LISTA ESTA VACIA!!! ");
             }
 
         }

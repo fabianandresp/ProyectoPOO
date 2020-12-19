@@ -10,20 +10,16 @@ package examenFinal;
  * @author pimie
  */
 public class Tester {
-    public static void main (String [ ] args){
+
+    public static void main(String[] args) {
+
+        Menu inicio = new Menu();
+
         
-        EquipoSonido a = new EquipoSonido();
-        Parlantes prue = new Parlantes();
+           while (true){
+           inicio.menu();
+            
         
-        a.almacenarMusica();
-        a.mostrarLista();
-        a.reproducirLista();
-        
-        prue.volumenParlante();
-        
-        
-        
-        
-        
+           }
     }
 }

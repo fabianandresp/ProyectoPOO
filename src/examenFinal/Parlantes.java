@@ -28,12 +28,14 @@ public class Parlantes {
             break;
         }
     }
-    
-        public void sonarEquipo(){
-           
-        
+
+    public void sonarEquipo() {
+        EquipoSonido a = new EquipoSonido();
+        a.reproducirLista();
+
     }
-        public void apagarEquipo(){
-            
-        }
+
+    public void apagarEquipo() {
+
+    }
 }
