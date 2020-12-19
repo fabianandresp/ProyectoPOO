@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class EquipoSonido {
 
     Scanner input = new Scanner(System.in);
-    Reloj universal;
+    Reloj universal = new Reloj();
     String musica;
     String autor;
     String[] listaAudios = new String[1000];
@@ -72,12 +72,13 @@ public class EquipoSonido {
     }
 
     public void programaEncendido() {
+        
         System.out.println("VAMOS A PROGRAMAR ENCENDIDO ... ");
         System.out.println("¿HORA");
         int x = input.nextInt();
         System.out.println("¿MINUTOS?");
         int y = input.nextInt();
-       
+            universal.setAlarm(x, y);
 }
 
     public void reproducirRadio() {

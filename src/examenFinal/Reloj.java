@@ -12,6 +12,9 @@ package examenFinal;
 public class Reloj {
     int hora;
     int minutos;
+    public Reloj(){
+        
+    }
 
     public Reloj(int hora, int minutos) {
         this.hora = hora;

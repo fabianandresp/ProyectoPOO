@@ -71,11 +71,12 @@ public class Controlador {
                 break;
             case 7: 
                 men.programaEncendido();
+                System.out.println("EL ENCENDIDO QUEDO PROGRAMADO PARA LAS: " + men.universal.getHora()+ men.universal.getMinutos());
                 break;
             case 8:
-
-                System.out.println("NOS VEMOS LUEGO, ADIOS!!");
+                sonido.apagarEquipo();
                 break;
+                
 
         }
     }

@@ -36,6 +36,7 @@ public class Parlantes {
     }
 
     public void apagarEquipo() {
-
+                System.out.println("NOS VEMOS LUEGO, ADIOS!!");
+                
     }
 }
