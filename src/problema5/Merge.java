@@ -27,7 +27,7 @@ public class Merge {
     public void imprimir(){
         System.out.println("El Arreglo final es: ");
         for(int i = 0 ; i<10;i++){
-            System.out.print(arreglo3[i]);
+            System.out.println(arreglo3[i]);
         }
     }
     public void ordenar(){

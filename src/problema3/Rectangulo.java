@@ -16,7 +16,7 @@ public class Rectangulo {
     int ancho;
     int alto;
     
-    public void dibujarRectangulo(){
+    public Rectangulo(){
         
     }
 

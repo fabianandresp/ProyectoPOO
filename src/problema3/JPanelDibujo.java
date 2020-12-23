@@ -23,12 +23,12 @@ public class JPanelDibujo extends JPanel{
         super.paint(g);
         
         Ovalo ov = new Ovalo(150,50,100,100);
-        Rectangulo rec = new Rectangulo (150,50,100,100);
+        Rectangulo rec = new Rectangulo ();
         
         
         //LINEAS
         g.drawLine(25,90,60,50); //dibuja una línea
-
+        
         //OVALOS
         g.drawOval(ov.getPosX(), ov.getPosY(),ov.getAncho(), ov.getAlto()); //dibuja un ovalo sin fondo
         g.setColor(Color.blue);     
