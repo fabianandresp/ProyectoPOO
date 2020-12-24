@@ -24,27 +24,29 @@ public class Pizza {
     }
 
     Pizza() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
 
-    public int calcularMonto() {
-        int resultado = 0;
+    public void calcularMonto() {
+        float resultado = 0;
         if (queso != null) {
             resultado += queso.getPrecio();
-            
-        }
-        else if (queso != null) {
-            resultado += pepperoni.getPrecio();
-        }
 
-        else if (queso != null) {
+        } else if (queso != null) {
+            resultado += pepperoni.getPrecio();
+        } else if (queso != null) {
             resultado += carne.getPrecio();
-        }
-        else if (queso != null) {
+        } else if (queso != null) {
             resultado += tomate.getPrecio();
         }
-        
-        return  resultado;
+        resultado = (float) ((queso.getPrecio() + pepperoni.getPrecio() + carne.getPrecio() + tomate.getPrecio()) * 1.30);
+
+        System.out.println("El precio de la Pizza es : " + resultado);
+        System.out.println("Los ingrendientes que tiene la Pizza es: \n Queso \n Pepperoni \n Carne \n Tomate");
+    }
+
+    public void mostrarPrecio() {
+
     }
 
     public Ingredientes getQueso() {

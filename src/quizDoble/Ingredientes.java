@@ -10,17 +10,18 @@ package quizDoble;
  * @author pimie
  */
 public class Ingredientes {
-    
+
     String ingrediente;
     int precio;
+    String codigo;
 
     public Ingredientes(String ingrediente, int precio) {
         this.ingrediente = ingrediente;
         this.precio = precio;
     }
-    
-    public Ingredientes(){
-        
+
+    public Ingredientes() {
+
     }
 
     public String getIngrediente() {
@@ -38,8 +39,5 @@ public class Ingredientes {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
-    
 
-   
-    
 }
