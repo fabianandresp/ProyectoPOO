@@ -6,52 +6,62 @@ import java.awt.*;
 /**
  * Panel para dibujar
  */
-public class JPanelDibujo extends JPanel{
-  
-  
-  /* 
-   * Constructor del panel para dibujar
-   */
-  public JPanelDibujo(){
-    this.setBackground(Color.ORANGE);
-  }
-  
+public class JPanelDibujo extends JPanel {
 
-  
-  // Reimplementa paint
-  public void paint (Graphics g) { 
+    /* 
+   * Constructor del panel para dibujar
+     */
+    public JPanelDibujo() {
+        this.setBackground(Color.WHITE);
+    }
+
+    // Reimplementa paint
+    public void paint(Graphics g) {
         super.paint(g);
-        
-        Ovalo ov = new Ovalo(150,50,100,100);
-        Rectangulo rec = new Rectangulo ();
-        
-        
+        int cant = (int) (Math.random()*5);
+
         //LINEAS
         g.drawLine(25,90,60,50); //dibuja una línea
-        
         //OVALOS
-        g.drawOval(ov.getPosX(), ov.getPosY(),ov.getAncho(), ov.getAlto()); //dibuja un ovalo sin fondo
-        g.setColor(Color.blue);     
-        g.fillOval(340,50,80,120);  //dibuja un ovalo con fondo azul
-        g.setColor(Color.yellow);
-        g.fillOval(200,160,160,80); //dibuja un ovalo con fondo amarillo
-        
+        for (int i = 0; i <= cant; i++) {
+            int x = (int) (Math.random()* 600+1);
+            int y = (int) (Math.random()*150 + 22);
+            int alto = (int) (Math.random()* 100 + 25);
+            int ancho = (int) (Math.random() * 100 + 25);
+            Ovalo o = new Ovalo(x, y, alto, ancho);
+            o.setPosX(x);
+            o.setPosY(y);
+            o.setAlto(alto);
+            o.setAncho(ancho);
+
+            g.setColor(Color.blue);
+            g.drawOval(o.getPosX(), o.getPosY(), o.getAlto(), o.getAncho());
+
+        }
         //RECTANGULOS
-        
-        g.setColor(Color.blue);
-        g.fillRect(450,80,180,90);
-        g.setColor(Color.black);
-        g.drawRect(475,100,50,50);
-        g.clearRect(555,100,50,50);//note lo que pasa si comenta esta línea
-        
+        for (int i = 0; i < cant; i++) {
+            int x = (int) (Math.random()* 600+1);
+            int y = (int) (Math.random()* 150+22);
+            int alto = (int) (Math.random()* 100*25);
+            int ancho = (int) (Math.random()*100 * 25);
+            Rectangulo rec = new Rectangulo(x, y, alto, ancho);
+            rec.setPosX(x);
+            rec.setPosY(y);
+            rec.setAlto(alto);
+            rec.setAncho(ancho);
+
+            g.setColor(Color.black);
+            g.drawRect(rec.getPosX(), rec.getPosY(), rec.getAlto(), rec.getAncho());
+        }
+
         // STRINGS
-        Font fuente = new Font("Arial", Font.BOLD, 15);
+        /* Font fuente = new Font("Arial", Font.BOLD, 15);
         g.setColor(Color.blue);
         g.setFont(fuente);
         g.drawString("Hola mundo!", 5, 360);
-        
+         */
         // ARCOS
-        g.setColor(Color.yellow);
+        /* g.setColor(Color.yellow);
         g.fillArc(240, 340, 100, 100, 25, 300);
         g.setColor(Color.white);
         g.fillArc(240, 340, 100, 100, 15, 10);
@@ -74,7 +84,7 @@ public class JPanelDibujo extends JPanel{
         g.drawPolygon(estrella);
         g.setColor(Color.blue);
         g.fillPolygon(cX,cY,cX.length);
-
-     }
+         */
+    }
 
 }

@@ -10,6 +10,7 @@ package problema3;
  * @author Andres
  */
 public class Ovalo {
+
     int posX;
     int posY;
     int ancho;
@@ -53,6 +54,5 @@ public class Ovalo {
     public void setAlto(int alto) {
         this.alto = alto;
     }
-    
-    
+
 }
