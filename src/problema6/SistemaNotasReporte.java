@@ -11,23 +11,26 @@ package problema6;
  */
 public class SistemaNotasReporte {
 
+    SistemaNotas x = new SistemaNotas();
+    Alumno a = new Alumno();
+
     public void generarReporteTodosExamenes() {
-        SistemaNotas x = new SistemaNotas();
         x.mostrarExamenes();
 
     }
 
     public void generarReporteTodosAlumnos() {
-        Alumno a = new Alumno();
+
         a.mostrardatos();
     }
 
     public void generarReporteAlumnosConNotaInferiorA(int nota) {
-        
-                
-    }
-
-    public void generarReporteTodosExamenesOrdenadosPor(String propiedad) {
+        x.mostrarExamenMenoresA(nota);
 
     }
+
+    public void generarReporteTodosExamenesOrdenadosPor() {
+        x.ordenar();
+    }
+
 }

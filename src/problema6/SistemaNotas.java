@@ -40,10 +40,18 @@ public class SistemaNotas {
         }
     }
 
-    //calcular promedio
-    public float promedioNotas() {
-        float retorno = 0f;
+    public void mostrarExamenMenoresA(int nota) {
+        int condicional = nota;
 
-        return retorno;
+        for (int i = 0; i < condicional; i++) {
+            if (examenes[i] != null) {
+                System.out.println(examenes[i].toString());
+            }
+
+        }
+    }
+
+    public void ordenar() {
+
     }
 }

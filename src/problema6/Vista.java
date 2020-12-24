@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author pimie
  */
-public class Menu {
+public class Vista {
 
     // Atributos 
     int opcion;
@@ -33,24 +33,33 @@ public class Menu {
         System.out.println("2.- INGRESAR NOTAS");
         System.out.println("3.- INGRESAR DATOS DEL PADRE Y LA MADRE");
         System.out.println("4.- MOSTRAR DATOS ALMACENADOS");
-        System.out.println("5.- FINALIZAR");
+        System.out.println("5.- ¿GENERAR REPORTE DE NOTAS?");
+        System.out.println("6.- FINALIZAR");
     }
 
     public void opciones3() {
 
         System.out.println("3.- INGRESAR DATOS DEL PADRE Y LA MADRE");
         System.out.println("4.- MOSTRAR DATOS ALMACENADOS");
-        System.out.println("5.- FINALIZAR");
+        System.out.println("5.- ¿GENERAR REPORTE DE NOTAS?");
+        System.out.println("6.- FINALIZAR");
 
     }
 
     public void opcionNew() {
         System.out.println("4.- MOSTRAR DATOS ALMACENADOS");
-        System.out.println("5.- FINALIZAR");
+        System.out.println("5.- ¿GENERAR REPORTE DE NOTAS?");
+        System.out.println("6.- FINALIZAR");
 
     }
-    public void opcionnew2(){
-        System.out.println("5.- FINALIZAR");
+
+    public void opcionnew2() {
+        System.out.println("5.- ¿GENERAR REPORTE DE NOTAS?");
+        System.out.println("6.- FINALIZAR");
+    }
+
+    public void opcionesNew3() {
+        System.out.println("6.- FINALIZAR");
     }
 
     public void opciones4() {
@@ -58,10 +67,14 @@ public class Menu {
         System.out.println("2.- INGRESAR NOTAS");
         System.out.println("3.- INGRESAR DATOS DEL PADRE Y LA MADRE");
         System.out.println("4.- MOSTRAR DATOS ALMACENADOS");
-        System.out.println("5.- FINALIZAR");
+        System.out.println("6.- FINALIZAR");
     }
 
-    public Menu() {
+    public void opcionReporte() {
+        System.out.println("5.- ¿GENERAR REPORTE DE NOTAS?");
+    }
+
+    public Vista() {
 
     }
 

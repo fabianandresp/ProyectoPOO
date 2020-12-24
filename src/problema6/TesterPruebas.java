@@ -9,10 +9,12 @@ package problema6;
  *
  * @author pimie
  */
-public class Tester {
+public class TesterPruebas {
 
     public static void main(String[] args) {
-        Controlador inicio = new Controlador();
-        inicio.iniciar();
+        SistemaNotas prueba = new SistemaNotas();
+
+        prueba.mostrarExamenMenoresA(7);
+
     }
 }

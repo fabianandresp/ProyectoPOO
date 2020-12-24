@@ -7,8 +7,9 @@ public class Controlador {
 
     SistemaNotas sistema = new SistemaNotas();
     Scanner s = new Scanner(System.in);
-    Menu me = new Menu();
+    Vista me = new Vista();
     Alumno alum = new Alumno();
+    int condicional;
 
     public void iniciar() {
 
@@ -75,6 +76,13 @@ public class Controlador {
 
                     break;
                 case 5:
+                    System.out.println(" ¿Que notas desea buscar? ");
+                    condicional = s.nextInt();
+                    SistemaNotasReporte c = new SistemaNotasReporte();
+                    c.generarReporteAlumnosConNotaInferiorA(condicional);
+                    me.opcionesNew3();
+
+                case 6:
 
                     System.out.println("ADIOS PROFE!");
                     System.out.println(" ");
